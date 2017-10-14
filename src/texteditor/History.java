@@ -18,10 +18,6 @@ public class History {
             isEmpty = false;
             try {
                 commandSwitch(userInput);
-                if (quit) {
-                    System.out.println("Program terminated\nGoodbye");
-                    break;
-                }
                 if (isEmpty){
                     continue;
                 }
@@ -53,7 +49,8 @@ public class History {
                 System.out.println("Entry item '" +text.peek() + "' has been added back to history");
                 break;
             case "quit":
-                quit = true;
+                System.out.println("Program terminated\nGoodbye");
+                System.exit(0);
                 break;
             case "":
                 isEmpty = true;
