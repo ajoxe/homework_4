@@ -8,7 +8,5 @@ public class Main {
     new TextArea().setVisible(true);
     //TODO: figure out stack of text areas and how to apply history methods to them. Probably needs buttons/menu of somekind
 
-
     }
-
 }
